@@ -1,0 +1,52 @@
+﻿<Window x:Class="Diplom.Windows.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom.Windows"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800" Background="Teal">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+       
+        <Button Content="Регистрация" FontFamily="Verdana" FontWeight="Bold" Foreground="Bisque" Grid.Column="1" Grid.Row="4"
+Margin="130,10,130,10" />
+        <StackPanel Grid.Row="1" Grid.Column="1" >
+            <Label Foreground="Bisque" Content="Введите Имя" 
+                   Grid.IsSharedSizeScope="True" FontSize="16"
+                   FontFamily="Verdana" FontWeight="Bold" />
+            <TextBox FontSize="12" FontFamily="Verdana" 
+                     FontWeight="Bold" Foreground="Bisque" />
+            <Label Foreground="Bisque" Content="Введите Фамилию" 
+                   Grid.IsSharedSizeScope="True" FontSize="16"
+                   FontFamily="Verdana" FontWeight="Bold"/>
+            <TextBox FontSize="12" FontFamily="Verdana" 
+                     FontWeight="Bold" Foreground="Bisque"/>
+            <Label Foreground="Bisque" Content="Введите номер телефона" 
+                   Grid.IsSharedSizeScope="True" FontSize="16"
+                   FontFamily="Verdana" FontWeight="Bold" />
+            <TextBox FontSize="12" FontFamily="Verdana" 
+                     FontWeight="Bold" Foreground="Bisque"/>
+            <Label Foreground="Bisque" Content="Введите адресс"
+                   Grid.IsSharedSizeScope="True" FontSize="16"
+FontFamily="Verdana" FontWeight="Bold" />
+            <TextBox FontSize="12" FontFamily="Verdana" 
+                     FontWeight="Bold" Foreground="Bisque" />
+            <Label Foreground="Bisque" Content="Введите банковские реквизиты" Grid.Column="1"
+                   Grid.Row="1" Grid.IsSharedSizeScope="True" FontSize="16"
+                   FontFamily="Verdana" FontWeight="Bold" />
+            <TextBox FontSize="12" FontFamily="Verdana" FontWeight="Bold" 
+                     Foreground="Bisque"/>
+        </StackPanel>
+    </Grid>
+</Window>
